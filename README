@@ -1,0 +1,9 @@
+The package mwe.7z contains three files:
+1) 200MWEs.csv - is a random sample of 200 MWEs drawn from the list of WordNet MWEs (but without proper nouns and chemistry/biology terms), annotated with several criteria. The column "class" contains "MWLU" (= multi-word lexical unit) if in one out of four online English dictionaries (Collins, Longman, Lexico and Merriam-Webster) a MWEs occurred as an entry, we give "nonMWLU" (= non-lexicalised MWE) otherwise.
+2) MWE-enWN-Rules-and-LR.csv - is a full list of WordNet MWEs (but without proper nouns and biology/chemistry terms) annotated automatically with lexicality criteria and with the use of two algorithms. Hand-written rules (the column "rules") gave the precision of 76% for the class "MWLU" (recall = 26%) and the recall of 87% for the class "nonMWLU" (with precision = 42%). Ridge logistic regression (the column "pred_LR") obtained the precision of 83% for the class "MWLU" (recall = 45%) and the recall of 83% and 49% precision for the class "nonMWLU".
+3) pwn-pewn-v.3.0.csv - it is a mapping between internal synset_id_PEWN identifiers of Polish-English WordNet and synset_id_wn30 identifiers of Princeton WordNet v. 3.0.
+
+License:
+Marek Maziarz, Ewa Rudnicka, Łukasz Grabowski
+Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+https://creativecommons.org/licenses/by-sa/4.0/
